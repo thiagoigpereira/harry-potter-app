@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.border-gryffindor,
+.border-slytherin,
+.border-ravenclaw,
+.border-hufflepuff {
+  border-width: 0.25rem;
+  border-style: solid;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.border-gryffindor {
+  border-color: #740001;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.border-slytherin {
+  border-color: #1a472a;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.border-ravenclaw {
+  border-color: #222f5b;
+}
+
+.border-hufflepuff {
+  border-color: #ecb939;
+}
+
+.bg-gryffindor {
+  background-color: #740001;
+}
+
+.bg-slytherin {
+  background-color: #1a472a;
+}
+
+.bg-ravenclaw {
+  background-color: #222f5b;
+}
+
+.bg-hufflepuff {
+  background-color: #ecb939;
 }
